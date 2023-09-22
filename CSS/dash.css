@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(228, 227, 227);
+}
+.card{
+    position: absolute;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 90vw;
+    height: auto;
+    width: auto;
+    right: 30px;
+    bottom: 30px;
+    left: 100px;
+    top: 100px;
+}
+.heading{
+    left: 120px;
+    position: absolute;
+    top:0;
+    font-size: 3rem;
+}
