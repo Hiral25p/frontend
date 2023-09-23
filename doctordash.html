@@ -129,7 +129,7 @@
             
         </div>
         <div class="col-lg-9 col-md-9">
-            <button class="addrecords">
+            <button class="addrecords" data-bs-target="#otpModal" data-bs-toggle="modal">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Add
                 </span>
@@ -139,6 +139,104 @@
         <!-- adb -->
         
             
+        <div class="modal fade" id="otpModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="" method="post">
+                    <div class="row align-items-center gy-2">
+                    <div class="col-5 formHeading"><h5>Patient PID:</h5></div>
+                    <div class="col-7"> 
+                        <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                        <input class="col-12 form-control" type="number" id="pid" name="patientPid" placeholder="11223344556677" required>
+                    </div>
+                    <div class="col-5 formHeading"><h5>OTP:</h5></div>
+                    <div class="col-7"> 
+                        <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                        <input class="col-12 form-control" type="number" id="otp" name="patientOtp" placeholder="6 digit OTP" required>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                  <button class="btn btn-success" type="submit" name="otpSubmit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="historyEditModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="row align-items-center gy-2">
+                        <div class="col-5 formHeading"><h5>Doctor Name:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="doctorname" name="doctorName" placeholder="John Wick" value="" hidden required>
+                            <input class="col-12 form-control" type="text" placeholder="John Wick" value="" disabled required>
+                        </div>
+                        <div class="col-5 formHeading"><h5>Doctor PID:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="number" id="doctorpid" name="doctorPid" placeholder="11223344556677" value="" hidden required>
+                            <input class="col-12 form-control" type="number" placeholder="11223344556677" value="" disabled required>
+                        </div>
+                        <div class="col-5 formHeading"><h5>Patient Name:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="patientname" name="patientName" placeholder="John Wick" value="" hidden required>
+                            <input class="col-12 form-control" type="text" placeholder="John Wick" value="" disabled required>
+                        </div>
+                        <div class="col-5 formHeading"><h5>Patient PID:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="number" id="patientpid" name="patientPid" placeholder="11223344556677" value="" hidden required>
+                            <input class="col-12 form-control" type="number" placeholder="11223344556677" value="" disabled required>
+                        </div>
+                        <div class="col-5 formHeading"><h5>Purpose:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="purpose" name="purpose" placeholder="" value="" required>
+                            <!-- <input class="col-12 form-control" type="text" placeholder="" value="" disabled required> -->
+                        </div>
+                        <div class="col-5 formHeading"><h5>Diagnosed With:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="diagnose" name="diagnose" placeholder="" value="" required>
+                            <!-- <input class="col-12 form-control" type="text" placeholder="" value="" disabled required> -->
+                        </div>
+                        <div class="col-5 formHeading"><h5>Medicine:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="medicine" name="medicine" placeholder="" value="">
+                            <!-- <input class="col-12 form-control" type="text" placeholder="" value="" disabled required> -->
+                        </div>
+                        <div class="col-5 formHeading"><h5>Treatment:</h5></div>
+                        <div class="col-7"> 
+                            <!-- <label for="name1" class="col-12 ms-0 ps-0"></label>  -->
+                            <input class="col-12 form-control" type="text" id="treatment" name="treatment" placeholder="" value="">
+                            <!-- <input class="col-12 form-control" type="text" placeholder="" value="" disabled required> -->
+                        </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                  <button class="btn btn-success">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
                 
 
     </div>
