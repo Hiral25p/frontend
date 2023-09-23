@@ -200,13 +200,32 @@
         </div>
         <div class="col-lg-9 col-md-9">
             <button class="addrecords">
-                <span>
+                <span><a class="btn" data-bs-toggle="modal" data-bs-target="#generateotp">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Add
-                </span>
+                </a></span>
               </button>
         </div>
             
-        
+        <div class="modal fade" id="generateotp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Generate OTP</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="otpDisplay" style="display: none;">
+                        <p>Generated OTP: <span id="generatedOTP"></span></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                  <button type="submit" name="bloodgroup" class="btn btn-success" onclick="generateOTP()">Generate OTP</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- adb -->
         
@@ -214,6 +233,16 @@
                 
         
     </div>
+    <script>
+        function generateOTP() {
+            document.getElementById("generatedOTP").textContent = "";
+            const otp = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById("generatedOTP").textContent = otp;
+            document.getElementById("otpDisplay").style.display = "block";
+    
+            return false;
+        }
+    </script>
 </body>
 </html>
 
