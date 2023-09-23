@@ -18,11 +18,11 @@ body{
     /* width: 90vw; */
     height: auto;
     width: auto;
-    right: 30px;
+    right: 15px;
     margin-bottom: 30px;
     /* bottom: 30px; */
-    left: 150px;
-    top: 100px;
+    left: 120px;
+    top: 90px;
     /* display: flex; */
     /* justify-content: center; */
     padding: 1.5% 2%;
@@ -30,14 +30,18 @@ body{
     flex-wrap: wrap;
 }
 .head{
-    left: 350px;
+    /* left: 320px; */
     position: absolute;
-    top:45px;
+    left: 100px;
+    width: calc(100% - 100px);
+    text-align: center;
+    top:40px;
     font-size: calc(16px + 1.5vw);
+    font-family: PoppinsBold;
 }
 .photo{
     position: absolute;
-    left: 180px;
+    left: 150px;
     top: 20px;
     z-index: 5;
 }
@@ -59,7 +63,7 @@ body{
 }
 .card1 > .name{
     position: relative;
-    left: 120px;
+    left: 130px;
     font-size: 2.2vw;
     font-family: PoppinsBold;
 }
@@ -125,7 +129,4 @@ body{
     padding: 7.5px 7.5px 3.75px;
     font-size: 14px;
     height: 44px;
-}
-.formHeading{
-    
 }

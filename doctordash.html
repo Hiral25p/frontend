@@ -12,22 +12,30 @@
     <Button><a href="login.html">Login</a></Button>
     <Button><a href="signup.html">Signup</a></Button>
     <Button><a href="dash.html">Dash</a></Button>
+    <Button><a href="doctordash.html">DoctorDash</a></Button>
     <Button><a href="profile.html">Profile</a></Button>
 
     <h1 class="heading">Dashboard</h1>
     <div class="card container">
         <div class="row gy-2 gx-3">
-            <div class="col-lg-6 col-md-6 p-2">
-                <div class="card1 ">
-                    <div class="photo">
+            <div class="col-lg-6 col-md-12 p-2">
+                <div class="card1 row">
+                    <div class="photo col-3">
                         <img src="./Assets/profileimg.png" alt="Profile" class="profileimg">
                     </div>
-                    <span class="name">Praneel Tejpal Bora</span>
-                        <span class="leftText col-4">PID: </span><span class="rightText col-8"><b>192512351231</b></span><br>
-                        <span class="leftText col-4">Gender: </span><span class="rightText col-8"><b>Male</b></span><br>
-                        <span class="leftText col-4">Age: </span><span class="rightText col-8"><b>19</b></span><br>
-                        <span class="leftText col-4">Blood Grp: </span><span class="rightText col-8"><b>O-ve</b></span>
-                    <a href="profile.html">
+                    <span class="col-9 row">
+                        <span class="name col-12">Praneel Tejpal Bora</span>
+                        <span class="data col-12 row">
+                        <span class="leftText col-5">PID: </span>      <span class="rightText col-7"><b>192512351231</b></span><br>
+                        <span class="leftText col-5">Gender: </span>   <span class="rightText col-7"><b>Male</b></span><br>
+                        <span class="leftText col-5">Age: </span>      <span class="rightText col-7"><b>19</b></span><br>
+                        <span class="leftText col-5">Blood Grp: </span><span class="rightText col-7"><b>O-ve</b></span>
+                    
+                    </span>
+
+                    </span>
+                    
+                        <a href="profile.html">
                         <button class="cta">
                             <span class="hover-underline-animation"> View</span>
                             <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
@@ -38,7 +46,49 @@
                 </div>
             </div>
             
-        
+            <div class="col-lg-6 col-md-6 p-2">
+                <div class="card2">
+                    <div class="card-content row">
+                        <p class="card-title">Treatment History</p>
+                        <div class="col-12 row gx-2" style="position: relative;">
+                            <div class="col" style="padding: 0 1%;">
+                                <div class="histcard row">
+                                    <span class="col-5">Patient: </span><span class=" col-7">Praneel Bora </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Reason: </span><span class=" col-7">Constipation and headache and cold </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Visit: </span><span class=" col-7">17/8/23 </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Treatment: </span><span class=" col-7">Medicines and Exercise </span>
+                                    
+                                </div>
+                            </div>
+
+                            
+                            <span style=" width: 2px;margin: 0;padding: 0; background-color: #fff; border-radius: 5px; height: 80%; position: absolute; left: 50%; top:50%;transform: translate(-50%,-30%);"></span>
+                            <div class="col" style="padding: 0 1%;">
+                                <div class="histcard row">
+                                    <span class="col-5">Patient: </span><span class=" col-7">Jagjit Singh Bhumra </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Reason: </span><span class=" col-7">Constipation and headache and cold </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Visit: </span><span class=" col-7">17/8/23 </span>
+                                    <hr style="margin: 0.3rem; color: var(--green);">
+                                    <span class="col-5">Treatment: </span><span class=" col-7">Medicines and Exercise </span>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div><button class="cta1">
+                            <span class="hover-underline-animation"> View</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
         <div class="col-lg-6 col-md-6 p-2">
             <div class="card2 ">
                 <div class="card-content">
@@ -58,21 +108,6 @@
         </div>
                       
     
-            <div class="col-lg-6 col-md-6 p-2">
-                <div class="card2">
-                    <div class="card-content">
-                        <p class="card-title">Treatment History</p>
-                        <p class="card-para">dhruv dedhia - diseasename pid(if required)</p>
-                        <p class="card-para">dhruv dedhia - diseasename pid(if required)</p>
-                        <button class="cta1">
-                            <span class="hover-underline-animation"> View</span>
-                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
             
 
             <!-- <div class="col-lg-6 col-md-6 p-2">

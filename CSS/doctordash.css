@@ -10,9 +10,9 @@ body{
     max-width: 90vw;
     height: 45vw;
     width: auto;
-    right: 30px;
-    left: 150px;
-    top: 100px;
+    right: 15px;
+    left: 120px;
+    top: 90px;
     padding: 1.5% 2%;
     /* justify-content: space-evenly;
     flex-wrap: wrap; */
@@ -229,26 +229,38 @@ body{
     cursor: pointer;
   }
   .card-content {
-    padding: 20px;
+    padding: 10px;
     position: relative;
     z-index: 1;
     display: flex;
+    
     flex-direction: column;
     gap: 10px;
     color: white;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     text-align: center;
     height: 100%;
   }
-  
   .card-content .card-title {
-    font-size: 24px;
-    font-weight: 700;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 20px;
+    font-family: PoppinsBold;
     color: inherit;
     text-transform: uppercase;
   }
-  
+  .histcard{
+    margin: 0!important;
+    position: relative;
+    border-radius: 10px;
+    top:30px;
+    padding: 3% 0!important;
+    /* border: 1px solid #fff; */
+    text-align: left;
+    background-color: #005555;
+  }
   .card-content .card-para {
     color: inherit;
     opacity: 0.8;
@@ -321,31 +333,36 @@ body{
    }
 
 
-.photo{
-    position: absolute;
-    left: 180px;
+   .photo{
+    /* position: absolute; */
+    left: 20px;
     top: 20px;
     z-index: 5;
 }
 .photo img{
-    width: calc(120px + 3vw);
-    height: calc(120px + 3vw);
+    width: calc(40px + 6vw);
+    height: calc(40px + 6vw);
 }
-.card1{
-    display: flex;
-    height: 240px;
-    /* border: 1px solid; */
-    padding: 10px 20px;
-    margin: 10px 10px;
-    /* min-width: 500px; */
-
-}
-.card1{
-    height: 240px;
-}
-.card1 > .name{
-    position: relative;
-    left: 120px;
-    font-size: 2.2vw;
+   .card1{
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+   }
+   .card1 .name{
+    /* position: absolute; */
+    /* left: 160px; */
+    /* top:12px; */
+    font-size: calc(12px + 1.2vw);
     font-family: PoppinsBold;
+}
+.card1 > .data{
+    /* position: absolute; */
+    left: 160px;
+    top: 70px;
+}
+.data > .leftText{
+  font-size: calc(13px + 0.5vw);
+}
+.data > .rightText{
+  font-size: calc(13px + 0.5vw);
 }
