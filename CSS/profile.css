@@ -19,6 +19,7 @@ body{
     height: auto;
     width: auto;
     right: 30px;
+    margin-bottom: 30px;
     /* bottom: 30px; */
     left: 150px;
     top: 100px;
@@ -70,6 +71,8 @@ body{
 }
 .card2 > .rightText{
     font-size: calc(11px + 0.3vw);
+    text-decoration: none;
+    color: var(--font);
 }
 
 
