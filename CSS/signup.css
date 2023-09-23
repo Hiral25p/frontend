@@ -99,7 +99,7 @@ body {
     padding: 1em 0;
     border-bottom: 2px solid var(--light-grey);
     font-size: 1.2em;
-    color: var(--grey);
+    color: #b3bcc2;
 }
 
 .input input::placeholder {
@@ -162,3 +162,12 @@ body {
         font-size: 1.25em;
     }
 }
+select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5em 0;
+    border-bottom: 2px solid var(--light-grey);
+    font-size: 1.2em;
+    color: #b3bcc2;
+  }

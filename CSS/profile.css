@@ -1,5 +1,7 @@
 @import url(variables.css);
-
+*{
+    /* font-family: Poppins; */
+}
 body{
     background-color: rgb(228, 227, 227);
 }
@@ -18,6 +20,7 @@ body{
     /* justify-content: center; */
     padding: 1.5% 2%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .heading{
     left: 120px;
@@ -27,17 +30,19 @@ body{
 }
 .card1{
     display: flex;
-    height: 180px;
-    width: 40%;
+    height: 240px;
+    width: 50%;
     min-width: 300px;
     border: 1px solid;
     padding: 10px 20px;
     margin: 10px 10px;
+    min-width: 500px;
+
 }
 /* .card1 >img{
     padding-left: 20px;
 } */
-.maintext{
+.card1 > .maintext{
     display: flex;
     flex-direction: column; 
     height: 100%;
@@ -49,19 +54,88 @@ body{
 }
 .text1{
     font-size: 1.5rem;
-    width: 380px;
+    /* width: 380px; */
+}
+.card1 > .maintext > .text1 > .left{
+    float: left;
+    width: 130px;
+}
+.card1 > .maintext > .text1 > .right{
+    float: left; 
+    /* min-width: 240px;  */
+    text-align: left; 
+    margin-left: 10px;
+}
+.profileimg{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .card2{
-    display: flex;
-    height: 180px;
+    /* display: flex; */
+    height: 240px;
     border: 1px solid;
     padding: 10px 20px;
     margin: 10px 10px;
-}
-.profileimg{
-    width: 180px;
-    height: 180px;
+    width: 35%;
+    min-width: 350px;
 }
 .card2 > .header{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
+.card2 > .text1 > .left{
+    float: left;
+    width: 60%;
+}
+.card2 > .text1 > .left > .rel{
+    /* color: ; */
+    font-size: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* float: left; */
+    /* width: 10%; */
+}
+.card2 > .text1 > .right{
+    float: left;
+    font-size: 85%;
+    width: 36%;
+}
+.card3{
+    /* height: 240px; */
+    width: 50%;
+    min-width: 300px;
+    border: 1px solid;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    min-width: 500px;
+
+}
+.card3 > .header{
+    font-size: 1.5rem;
+}
+/* .card1 >img{
+    padding-left: 20px;
+} */
+.card3 > .maintext{
+    display: flex;
+    flex-direction: column; 
+    width: auto; 
+    padding-left: 30px;
+    position: relative;
+    justify-content: center;
+}
+.text1{
+    font-size: 1.5rem;
+}
+/* .card3 > .text1 > .left{
+    float: left;
+    width: 150px;
+}
+.card3 > .text1 > .right{
+    float: left; 
+    /* min-width: 240px;  */
+    text-align: left; 
+    margin-left: 10px;
+} */
