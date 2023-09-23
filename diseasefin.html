@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/836cf00832.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/disease2.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictive Page</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navContainer flex">
+            <div class="navlogo">
+                <a href="homepage.html"><img class="logoimg" src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="navlogin">
+                <button class="loginButton"><a class="links" href="dash.html">LOGOUT</a></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- main page -->
+    <!-- <div class="mainContainer">
+        <div class="HelloContainer"></div>
+        <div class="WelcomeContainer flex">
+            <div class="slider-container">
+                <label for="ageSlider"><center>Slide it to your age, it will help us analyze better!</center></label>
+                <input type="range" id="ageSlider" min="15" max="100" step="1" value="15">
+                <div id="ageValue">Age: 15</div>
+            </div>
+        </div> -->
+        <!-- <section class="main-section-container">
+                <div class="containers">
+                    <div class="question">
+                        <label for="overweight">I am Overweight and Obese</label>
+                        <div class="radio-options">
+                            <input type="radio" name="overweight" id="overweight_yes" value="Yes" required>
+                            <label for="overweight_yes">Yes</label>
+    
+                            <input type="radio" name="overweight" id="overweight_no" value="No" required>
+                            <label for="overweight_no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="question">
+                        <label for="smoke">I Smoke Cigarettes</label>
+                        <div class="radio-options">
+                            <input type="radio" name="smoke" id="smoke_yes" value="Yes" required>
+                            <label for="smoke_yes">Yes</label>
+    
+                            <input type="radio" name="smoke" id="smoke_no" value="No" required>
+                            <label for="smoke_no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="question">
+                        <label for="cholesterol">I have high Cholesterol</label>
+                        <div class="radio-options">
+                            <input type="radio" name="cholesterol" id="cholesterol_yes" value="Yes" required>
+                            <label for="cholesterol_yes">Yes</label>
+    
+                            <input type="radio" name="cholesterol" id="cholesterol_no" value="No" required>
+                            <label for="cholesterol_no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="question">
+                        <label for="hypertension">I have hypertension</label>
+                        <div class="radio-options">
+                            <input type="radio" name="hypertension" id="hypertension_yes" value="Yes" required>
+                            <label for="hypertension_yes">Yes</label>
+    
+                            <input type="radio" name="hypertension" id="hypertension_no" value="No" required>
+                            <label for="hypertension_no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="question">
+                        <label for="diabetes">I have diabetes</label>
+                        <div class="radio-options">
+                            <input type="radio" name="diabetes" id="diabetes_yes" value="Yes" required>
+                            <label for="diabetes_yes">Yes</label>
+    
+                            <input type="radio" name="diabetes" id="diabetes_no" value="No" required>
+                            <label for="diabetes_no">No</label>
+                        </div>
+                    </div>
+    
+                    <button class="button1" type="submit"><center>Submit</center></button>
+                </div>
+            </form>
+        </section> -->
+    </div>
+    <section class="main-section-container">
+        <form method="post">
+            <div class="containers">
+                <div class="information">
+                    <div class="flex-container">
+                        <h6>Choose the affected body part:<br>
+                            <select name="gender" id="gender">
+                                <option value="" disabled selected>Select the Category</option>
+                                <option value="1">Chest</option>
+                                <option value="2">Abdomen</option>
+                                <option value="31">Neck</option>
+                                <option value="4">Forearms</option>
+                                <option value="5">Elbows</option>
+                                <option value="6">Shoulders</option>
+                                <option value="7">Thighs</option>
+                                <option value="8">Nose</option>
+                                <option value="9">Hand</option>
+                                <option value="10">Knee</option>
+                            </select>
+                        </h6>
+                        <h6>I smoke cigaretts?<br>
+                            <select name="gender" id="gender">
+                                <option value="" disabled selected>Select the Category</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </h6>
+                        <h6>I have high cholesterol?<br>
+                            <select name="gender" id="gender">
+                                <option value="" disabled selected>Select the Category</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+                <button class="button1"><a class="links" href=".html">NEXT</a></button>
+        
+        </form>
+    </section>
+
+    <script>
+        const ageSlider = document.getElementById("ageSlider");
+        const ageValue = document.getElementById("ageValue");
+    
+        ageSlider.addEventListener("input", function() {
+            const age = ageSlider.value;
+            ageValue.textContent = `Age: ${age}`;
+        });
+    </script>
+</body>
+</html>
