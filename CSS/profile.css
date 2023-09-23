@@ -136,6 +136,6 @@ body{
 .card3 > .text1 > .right{
     float: left; 
     /* min-width: 240px;  */
-    text-align: left; 
+   /* text-align: left; 
     margin-left: 10px;
 } */
