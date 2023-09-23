@@ -2,140 +2,110 @@
 *{
     /* font-family: Poppins; */
 }
+/* hr{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+} */
 body{
     background-color: rgb(228, 227, 227);
 }
+
 .container1{
     position: absolute;
     border-radius: 15px;
     background-color: #fff;
-    width: 90vw;
+    /* width: 90vw; */
     height: auto;
     width: auto;
     right: 30px;
-    bottom: 30px;
+    /* bottom: 30px; */
     left: 150px;
     top: 100px;
-    display: flex;
+    /* display: flex; */
     /* justify-content: center; */
     padding: 1.5% 2%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.heading{
-    left: 120px;
+.head{
+    left: 350px;
     position: absolute;
-    top:0;
-    font-size: 3rem;
+    top:45px;
+    font-size: calc(16px + 1.5vw);
+}
+.photo{
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    z-index: 5;
+}
+.photo img{
+    width: calc(120px + 3vw);
+    height: calc(120px + 3vw);
 }
 .card1{
     display: flex;
     height: 240px;
-    width: 50%;
-    min-width: 300px;
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px 20px;
     margin: 10px 10px;
-    min-width: 500px;
+    /* min-width: 500px; */
 
 }
-/* .card1 >img{
-    padding-left: 20px;
-} */
-.card1 > .maintext{
-    display: flex;
-    flex-direction: column; 
-    height: 100%;
-    width: auto; 
-    padding-left: 30px;
-    position: relative;
-    /* top: 50%; */
-    justify-content: center;
-}
-.text1{
-    font-size: 1.5rem;
-    /* width: 380px; */
-}
-.card1 > .maintext > .text1 > .left{
-    float: left;
-    width: 130px;
-}
-.card1 > .maintext > .text1 > .right{
-    float: left; 
-    /* min-width: 240px;  */
-    text-align: left; 
-    margin-left: 10px;
-}
-.profileimg{
-    position: relative;
-    width: 180px;
-    height: 180px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.card2{
-    /* display: flex; */
+.card1{
     height: 240px;
-    border: 1px solid;
+}
+.card1 > .name{
+    position: relative;
+    left: 120px;
+    font-size: 2.2vw;
+    font-family: PoppinsBold;
+}
+/* .card1 img{
+    padding: 0;
+} */
+.card2 > .leftText{
+    font-size: calc(11px + 0.6vw);
+}
+.card2 > .rightText{
+    font-size: calc(11px + 0.3vw);
+}
+
+
+.card2{
+    height: 240px;
+    /* border: 1px solid; */
     padding: 10px 20px;
     margin: 10px 10px;
-    width: 35%;
-    min-width: 350px;
 }
-.card2 > .header{
-    font-size: 1.5rem;
+.header{
+    font-size: 1.8vw;
 }
-.card2 > .text1 > .left{
-    float: left;
-    width: 60%;
-}
-.card2 > .text1 > .left > .rel{
-    /* color: ; */
+.rel{
     font-size: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    /* float: left; */
-    /* width: 10%; */
-}
-.card2 > .text1 > .right{
-    float: left;
-    font-size: 85%;
-    width: 36%;
 }
 .card3{
-    /* height: 240px; */
-    width: 50%;
-    min-width: 300px;
-    border: 1px solid;
-    padding: 10px 20px;
-    margin: 10px 10px;
-    min-width: 500px;
+    position: relative;
+    /* border: 1px solid; */
+    margin: 5px 5px;
+}
+.card3 > .leftText{
+    font-size: calc(16px + 0.6vw);
+}
+.card3 > .rightText{
+    font-size: calc(16px + 0.3vw);
+}
+.card4{
+    position: relative;
+    /* border: 1px solid; */
+    margin: 5px 5px;
 
 }
-.card3 > .header{
-    font-size: 1.5rem;
-}
-/* .card1 >img{
-    padding-left: 20px;
-} */
-.card3 > .maintext{
-    display: flex;
-    flex-direction: column; 
-    width: auto; 
-    padding-left: 30px;
+.updated{
     position: relative;
-    justify-content: center;
+    bottom: 0;
+    text-align: right;
+    margin-top: 5px;
+    color: #959595;
 }
-.text1{
-    font-size: 1.5rem;
-}
-/* .card3 > .text1 > .left{
-    float: left;
-    width: 150px;
-}
-.card3 > .text1 > .right{
-    float: left; 
-    /* min-width: 240px;  */
-   /* text-align: left; 
-    margin-left: 10px;
-} */

@@ -4,50 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/profile.css">
+
 </head>
 <body>
     <Button><a href="login.html">Login</a></Button>
     <Button><a href="signup.html">Signup</a></Button>
     <Button><a href="dash.html">Dash</a></Button>
     <Button><a href="profile.html">Profile</a></Button>
-    <h1 class="heading">PID Card</h1>
-    <div class="container1">
-        <div class="card1">
-            <div class="img">
-                <img src="./Assets/profileimg.png" alt="Profile" class="profileimg">
-            </div>
-            <span class="maintext" >
-                <span class="text1"><span class="left">Name: </span><span class="right"><b><span>Praneel</span> <span>Tejpal</span> <span>Bora</span></b></span></span>
-                <span class="text1"> <span class="left">PID:</span> <span class="right"><b>192512351231</b></span></span>
-                <span class="text1"><span class="left">Gender: </span><span class="right"><b>Male</b></span></span>
-                <span class="text1"><span class="left">Age: </span><span class="right"><b>19</b></span></span>
-                <span class="text1"><span class="left">Blood Grp: </span><span class="right"><b>O-ve</b></span></span>
-            </span>
-            
-        </div>
-        <!-- <hr style="height: 240px;"> -->
-        <div class="card2">
-            <span class="header">Emergency Contacts</span>
-            <hr>
-            <span class="text1"><span class="left">Devesh Jain<span class="rel">(Fam)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
-            <span class="text1"><span class="left">Hiral Patel<span class="rel">(Fam)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
-            <span class="text1"><span class="left">Dhruv Dedhia<span class="rel">(Fri)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
-            <span class="text1"><span class="left">Aryan Shirsat<span class="rel">(Doc)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
-                
-        </div>
-        <div class="card3">
-            <span class="header">Health Data</span>
-            <hr>
-            <span class="maintext" >
-                <span class="text1"><span class="left">Diabilities: </span><span class="right"><b>Partially Impaired vision, physically impaired</b></span></span>
-                <span class="text1"> <span class="left">Allergies:</span> <span class="right"><b>Dust,  Animals, Pollen, Perfumes</b></span></span>
-                <span class="text1"><span class="left">Vaccines: </span><span class="right"><b>Covid, Flu, Hepatitis, Chickenpox</b></span></span>
-                <span class="text1"><span class="left">Major Surgeries: </span><span class="right"><b>Liver Transplant, Kidney donor, Kidney recipient, Bypass Surgery</b></span></span>
-                <!-- <span class="text1"><span class="left">Blood Grp: </span><span class="right"><b>O-ve</b></span></span> -->
-            </span>
-            
-        </div>
+    <h1 class="head">PID Card</h1>
+    <div class="photo">
+        <img src="./Assets/profileimg.png" alt="Profile" class="profileimg">
     </div>
+    <div class="container1 container gx-3">
+        <div class="row">
+            <div class="col-lg-7 col-12">
+
+                <div class="card1 row gx-3">
+                    
+                        <span class="name">Praneel Tejpal Bora</span>
+                        <span class="leftText col-4">PID: </span><span class="rightText col-8"><b>192512351231</b></span>
+                        <span class="leftText col-4">Gender: </span><span class="rightText col-8"><b>Male</b></span>
+                        <span class="leftText col-4">Age: </span><span class="rightText col-8"><b>19</b></span>
+                        <span class="leftText col-4">Blood Grp: </span><span class="rightText col-8"><b>O-ve</b></span>
+
+                </div>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div class="card2 row gx-3">
+                        <span class="header col-12">Emergency Contacts</span>
+                        <hr>
+                        <span class="leftText col-8">Devesh Jain: <span class="rel">(Fam)</span></span><span class="rightText col-4"><b>7447425397</b></span>
+                        <span class="leftText col-8">Hiral Patel: <span class="rel">(Fam)</span></span><span class="rightText col-4"><b>7447425397</b></span>
+                        <span class="leftText col-8">Dhruv Dedhia:<span class="rel">(Fri)</span> </span><span class="rightText col-4"><b>7447425397</b></span>
+                        <span class="leftText col-8">Aryan Shirsa:<span class="rel">(Doc)</span> </span><span class="rightText col-4"><b>7447425397</b></span>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card3 row gx-3">
+                        <span class="header col-12">Health Data</span>
+                        <hr>
+                        <span class="leftText col-4">Disabilities: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Illness: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span> <span class="badge rounded-pill bg-dark">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Allergies: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-success">Partially Impaired vision</span> <span class="badge rounded-pill bg-success">Partially Impaired vision</span> <span class="badge rounded-pill bg-success">Partially Impaired vision</span> <span class="badge rounded-pill bg-success">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Vaccines: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-primary">Partially Impaired vision</span> <span class="badge rounded-pill bg-primary">Partially Impaired vision</span> <span class="badge rounded-pill bg-primary">Partially Impaired vision</span> <span class="badge rounded-pill bg-primary">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Major Surgeries: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Medications: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span></b></span>
+                        <span class="leftText col-4">Birthmarks: </span><span class="rightText col-8"><b><span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span> <span class="badge rounded-pill bg-danger">Partially Impaired vision</span></b></span>
+                        </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="card4 col-12 row">
+                        <span class="header col-12">Emergency Instructions</span>
+                        <hr>
+                        <span class="col-6">Resusitate</span>         <span class="col-6">No</span>
+                        <span class="col-6">Organ Donor ()  </span>   <span class="col-6">Unknown</span> 
+                        <span class="col-6">Organ Donor (Yes) </span> <span class="col-6">Verified</span>
+                        <span class="col-6">Organ Donor (No) </span>  <span class="col-6">Verified</span>
+                        <span class="col-6">Blood Transfusion </span> <span class="col-6">Allergic</span>
+                        <span class="col-6">Anesthetic </span>        <span class="col-6">Possible Allergic</span>
+                        
+                    </div>
+                    <br>
+                    <div class="card4 col-12 row">
+                        <span class="header col-12">Insurance Details</span>
+                        <hr>
+                        <span class="col-7">Insurance Present?</span><span class="col-5">No</span>
+                        <span class="col-7">Date of Issue  </span> <span class="col-5">09/03/04</span> 
+                        <span class="col-7">Date of Expiry </span> <span class="col-5">08/03/64</span>
+                        <span class="col-7">Insurance Company </span> <span class="col-5">Healthcare limited</span>
+                    </div>
+                </div>
+                
+            </div>
+            <span class="col-12 updated">Last updated: 22/9/23</span>
+
+        </div>
+        
+
+    </div>
+    
+    <!-- <div class="card2">
+        <hr>
+        <span class="text1"><span class="left">Devesh Jain<span class="rel">(Fam)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
+        <span class="text1"><span class="left">Hiral Patel<span class="rel">(Fam)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
+        <span class="text1"><span class="left">Dhruv Dedhia<span class="rel">(Fri)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
+        <span class="text1"><span class="left">Aryan Shirsat<span class="rel">(Doc)</span></span><span class="right"><b><span>7447425397</span></b></span></span>
+            
+    </div>
+    <div class="card3">
+        <span class="header">Health Data</span>
+        <hr>
+        <span class="maintext" >
+            <span class="text1"><span class="left">Diabilities: </span><span class="right"><b>Partially Impaired vision, physically impaired</b></span></span>
+            <span class="text1"> <span class="left">Allergies:</span> <span class="right"><b>Dust,  Animals, Pollen, Perfumes</b></span></span>
+            <span class="text1"><span class="left">Vaccines: </span><span class="right"><b>Covid, Flu, Hepatitis, Chickenpox</b></span></span>
+            <span class="text1"><span class="left">Major Surgeries: </span><span class="right"><b>Liver Transplant, Kidney donor, Kidney recipient, Bypass Surgery</b></span></span>
+        </span>
+        
+    </div>  -->
+</div>
 </body>
 </html>
